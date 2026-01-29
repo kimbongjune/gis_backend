@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: gis
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gis
+    username: postgres
+    password: ezen
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+server:
+    port: 8081
+
+geoserver:
+  url: http://localhost:8080/geoserver
+  user: admin
+  password: geoserver
