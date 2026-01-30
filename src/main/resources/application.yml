@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/gis
     username: postgres
-    password: ezen
+    password: qwer123#
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
@@ -26,6 +26,6 @@ server:
     port: 8081
 
 geoserver:
-  url: http://localhost:8080/geoserver
+  url: http://localhost:8100/geoserver
   user: admin
-  password: geoserver
+  password: qwer123#
